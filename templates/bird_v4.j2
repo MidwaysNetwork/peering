@@ -1,0 +1,18 @@
+protocol bgp {{ ix_name_strip }}_{{ neighbor_as }}{%- if session_num > 1 %}_{{ session_num }}{%- endif %} from UPSTREAM {
+    neighbor {{ neighbor_ipv4 }} as {{ neighbor_as }};
+    description "{{ ix_name }} / {{ description }}";
+    {%- if limit_ipv4 %}
+        {% if limit_ipv4 > 50 %}
+    import limit {{ limit_ipv4 }};
+        {%- endif %}
+    {%- endif %}
+    export filter {
+        if ! check_export4() then reject;
+        accept;
+    };
+    import filter {
+        if ! check_import4({{ neighbor_as }},{{ neighbor_ipv4 }},"peering",{{ med }},{{ local_pref}}) then reject;
+        accept;
+    };
+}
+

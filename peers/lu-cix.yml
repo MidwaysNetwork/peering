@@ -1,0 +1,93 @@
+2906:
+  description: Netflix
+  export: MDW-MAIN-AS
+  import: as-nflx
+  limit_ipv4: 250
+  limit_ipv6: 250
+  local_pref: 205
+  med: 214
+  peerings:
+  - 188.93.170.90
+  - 2001:7f8:4c::b5a:1
+  - 188.93.171.90
+  - 2001:7f8:4c::b5a:2
+6939:
+  description: Hurricane Electric
+  export: MDW-MAIN-AS
+  import: RADB::AS-HURRICANE RADB::AS-HURRICANEv6
+  limit_ipv4: 169000
+  limit_ipv6: 36000
+  local_pref: 212
+  med: 207
+  peerings:
+  - 188.93.170.43
+  - 2001:7f8:4c::1b1b:1
+9036:
+  description: Neuronnexion
+  export: MDW-MAIN-AS
+  import: AS-NEURONNEXION
+  limit_ipv4: 40
+  limit_ipv6: 1
+  local_pref: 217
+  med: 202
+  peerings:
+  - 188.93.170.68
+13335:
+  description: Cloudflare
+  export: MDW-MAIN-AS
+  import: AS-CLOUDFLARE
+  limit_ipv4: 500
+  limit_ipv6: 100
+  local_pref: 208
+  med: 211
+  peerings:
+  - 188.93.170.100
+  - 2001:7f8:4c::3417:1
+20562:
+  description: Open Peering
+  export: MDW-MAIN-AS
+  import: AS-OPENPEERING
+  limit_ipv4: 5000
+  limit_ipv6: 500
+  local_pref: -1440
+  med: 1860
+  peerings:
+  - 188.93.170.47
+  - 2001:7f8:4c::5052:1
+29169:
+  description: Gandi
+  export: MDW-MAIN-AS
+  import: AS-GANDI
+  limit_ipv4: 50
+  limit_ipv6: 20
+  local_pref: 205
+  med: 214
+  peerings:
+  - 188.93.170.57
+  - 2001:7f8:4c::71f1:1
+29467:
+  description: LuxNetwork S.A.
+  export: MDW-MAIN-AS
+  import: RIPE::AS-LUXNETWORK
+  limit_ipv4: 500
+  limit_ipv6: 150
+  local_pref: 208
+  med: 211
+  peerings:
+  - 188.93.170.56
+  - 2001:7f8:4c::731b:1
+  - 188.93.171.56
+  - 2001:7f8:4c::731b:2
+197692:
+  description: Conostix S.A.
+  export: MDW-MAIN-AS
+  import: CONOSTIX
+  limit_ipv4: 2
+  limit_ipv6: 0
+  local_pref: 208
+  med: 211
+  peerings:
+  - 188.93.170.31
+  - 2001:7f8:4c::3043:c:1
+  - 188.93.171.31
+  - 2001:7f8:4c::3043:c:2

@@ -1,0 +1,57 @@
+Restarting a peering session - Relance d'une session de peering
+
+(English version below)
+Bonjour,
+
+Vous avez a ce jour une session de peering avec Gitoyen.
+Cette session de peering sur le point d'echange du %%IX%% est tombee a ce jour.
+Pourriez-vous la relancer (clear) ou verifier sa configuration de votre cote ? 
+Nous vous rappelons nos parametres et les votres : 
+
+Nos parametres : 
+    Operateur : Gitoyen
+    Email de contact : noc@gitoyen.net
+    AS : AS20766
+    AS-SET : AS-GITOYEN
+    Adresse IP %%IX%% : %%GITOYENIP%%
+    Max-Prefix recommande : 20
+Vos parametres : 
+    Operateur : %%NAME%%
+    AS : %%AS%%
+    Adresse IP %%IX%% : %%IP%%
+
+Si vos parametres de session ont change, n'hesitez pas a nous contacter.
+Merci d'avance pour votre collaboration,
+Bien cordialement,
+
+Benjamin Sonntag
+Noc Gitoyen
+
+----------------------------------------
+
+Dear Sir,
+
+We (Gitoyen) currently have a peering session with you.
+This session is currently not running at %%IX%% exchange point.
+Would you please restart it (clear) or check its configuration?
+Your parameters and  our parameters at this IX are shown below: 
+
+Our parameters: 
+    Operator: Gitoyen
+    Contact Email: noc@gitoyen.net
+    AS: AS20766
+    AS-SET: AS-GITOYEN
+    %%IX%% IP Address: %%GITOYENIP%%
+    Recommended Max-Prefix: 20
+Your parameters: 
+    Operator: %%NAME%%
+    AS: %%AS%%
+    %%IX%% IP Address: %%IP%%
+
+If your session parameters are not the one we have, please contact us.
+Thanks for your cooperation,
+
+Best Regards,
+
+Benjamin Sonntag
+Noc Gitoyen

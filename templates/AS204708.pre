@@ -1,0 +1,48 @@
+aut-num:    AS204708
+as-name:    MDW-MAIN-AS
+descr:      The main Autonomous System of Midway's Network (Belfort, France).
+org:        ORG-MN102-RIPE
+remarks:
+remarks:    =========================
+remarks:    IRR: AS-MIDWAYSNETWORK
+remarks:    Open peering policy: just ask peering@midways-network.org
+remarks:    PeeringDB: http://as204708.peeringdb.com/
+remarks:
+remarks:    ======== BGP Upstream ========
+remarks:    # Trinaps
+mp-import:  afi ipv4.unicast from AS50903 accept ANY
+mp-export:  afi ipv4.unicast to AS50903 announce AS-MIDWAYSNETWORK
+mp-import:  afi ipv6.unicast from AS50903 accept ANY
+mp-export:  afi ipv6.unicast to AS50903 announce AS-MIDWAYSNETWORK
+
+remarks:    -
+remarks:    # Gitoyen
+mp-import:  afi ipv4.unicast from AS20766 accept ANY
+mp-export:  afi ipv4.unicast to AS20766 announce AS-MIDWAYSNETWORK
+mp-import:  afi ipv6.unicast from AS20766 accept ANY
+mp-export:  afi ipv6.unicast to AS20766 announce AS-MIDWAYSNETWORK
+remarks:    -
+remarks:    # Milkywan
+mp-import:  afi ipv4.unicast from AS57199 accept ANY
+mp-export:  afi ipv4.unicast to AS57199 announce AS-MIDWAYSNETWORK
+mp-import:  afi ipv6.unicast from AS57199 accept ANY
+mp-export:  afi ipv6.unicast to AS57199 announce AS-MIDWAYSNETWORK
+remarks:    -
+remarks:    # HE.net (Only V6 as Backup)
+mp-import:  afi ipv6.unicast from AS6939 accept ANY
+mp-export:  afi ipv6.unicast to AS6939 announce AS-MIDWAYSNETWORK
+remarks:    -
+remarks:    ======== Peering ========
+remarks:    # France-IX
+mp-import:  afi ipv4.unicast from AS51706 accept ANY
+mp-export:  afi ipv4.unicast to AS51706 announce AS-MIDWAYSNETWORK
+mp-import:  afi ipv6.unicast from AS51706 accept ANY
+mp-export:  afi ipv6.unicast to AS51706 announce AS-MIDWAYSNETWORK
+remarks:         
+remarks:    # TopIX
+mp-import:  afi ipv4.unicast from AS25309 accept ANY
+mp-export:  afi ipv4.unicast to AS25309 announce AS-MIDWAYSNETWORK
+mp-import:  afi ipv6.unicast from AS25309 accept ANY
+mp-export:  afi ipv6.unicast to AS25309 announce AS-MIDWAYSNETWORK
+remarks:         
+

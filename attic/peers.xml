@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE peers SYSTEM "peers.dtd">
+
+<!-- Les "peers" de Gitoyen -->
+
+<peers>
+  <peer ix="sfinx">
+    <name>RIPE</name>
+    <ip>194.68.129.38</ip>
+    <as>12654</as>
+    <comments>A watcher:
+    http://www.ripe.net/ripencc/pub-services/np/rrc02.html</comments>
+    <prefix-in>peer-in</prefix-in> <!-- No longer spy-in, see the
+    above page about their beacon -->
+    <max-prefixes>2</max-prefixes>
+  </peer>
+  <peer ix="sfinx">
+    <name>Renater</name>
+    <ip>194.68.129.102</ip>
+    <as>2200</as>
+   <contact>peering@renater.fr</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Renater</name>
+    <ip>194.68.129.103</ip>
+    <as>2200</as>
+   <contact>peering@renater.fr</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Hivane</name>
+    <ip>194.68.129.123</ip>
+    <as>34019</as>
+    <as-set>HIVANE</as-set>
+    <contact>peering@hivane.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Absolight</name>
+    <ip>194.68.129.121</ip>
+    <as>29608</as>
+    <as-set>W2MY</as-set>
+    <contact>noc@w2my.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>RTL</name>
+    <ip>194.68.129.132</ip>
+    <as>44334</as>
+    <as-set>RTL</as-set>
+    <contact>david.ramahefason@rtl.fr</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Jet Multimedia</name>
+    <ip>194.68.129.133</ip>
+    <as>12566</as>
+    <as-set>JETMULTIMEDIA</as-set>
+    <contact>peering@jmsp.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>ARCOR</name>
+    <ip>194.68.129.139</ip>
+    <as>3209</as>
+    <as-set>ARCORGLOBAL</as-set>
+    <contact>peering@adm.arcor.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>OvaNet</name>
+    <ip>194.68.129.142</ip>
+    <as>29415</as>
+    <as-set>OVANET</as-set>
+    <contact>peering@ovanet.com</contact>
+    <map-in>sfinx-backup-in</map-in>
+  </peer>
+  <peer ix="sfinx">
+    <name>OVH</name>
+    <ip>194.68.129.144</ip>
+    <as>16276</as>
+    <comments>http://www.ovh.net/</comments>
+    <contact>ovh@ovh.fr</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>CYREALIS</name>
+    <ip>194.68.129.146</ip>
+    <as>30972</as>
+    <as-set>CYREALIS</as-set>
+    <contact>peering@cyrealis.com</contact>
+    <map-in>sfinx-backup-in</map-in>
+  </peer>
+  <peer ix="sfinx">
+    <name>M-ROOT</name>
+    <ip>194.68.129.148</ip>
+    <as>7500</as>
+    <contact>as7500@nspixp.wide.ap.jp</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>F-ROOT</name>
+    <ip>194.68.129.150</ip>
+    <as>30126</as>
+    <contact>peering@isc.org</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>ARCOR</name>
+    <ip>194.68.129.155</ip>
+    <as>3209</as>
+    <as-set>ARCORGLOBAL</as-set>
+    <contact>peering@adm.arcor.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Viatel</name>
+    <ip>194.68.129.156</ip>
+    <as>8190</as>
+    <as-set>VIATEL</as-set>
+    <contact>peering@viatel.net</contact>
+  </peer>
+<!--
+  <peer ix="sfinx">
+    <name>Swisscom IP-Plus</name>
+    <ip>194.68.129.159</ip>
+    <as>3303</as>
+    <contact>engineering@ip-plus.net</contact>
+    <max-prefixes>2000</max-prefixes>
+  </peer>
+-->
+  <peer ix="sfinx">
+    <name>Andrexen</name>
+    <ip>194.68.129.161</ip>
+    <as>44583</as>
+    <as-set>AS-ANDREXEN</as-set>
+    <contact>peering@andrexen.com</contact>
+    <max-prefixes>10</max-prefixes>
+  </peer>
+  <peer ix="sfinx">
+    <name>SWIPnet</name>
+    <ip>194.68.129.162</ip>
+    <as>1257</as>
+    <as-set>SWIPNET</as-set>
+    <contact>peering@swip.net</contact>
+    <max-prefixes>1500</max-prefixes>
+  </peer>
+  <peer ix="sfinx">
+    <name>Cogent</name>
+    <ip>194.68.129.164</ip>
+    <as>174</as>
+    <as-set>COGENT</as-set>
+    <contact>peering@cogentco.com</contact>
+    <max-prefixes>40000</max-prefixes>
+  </peer>
+  <peer ix="sfinx">
+   <name>720degres</name>
+   <ip>194.68.129.166</ip>
+   <as>42937</as>
+   <contact>peering@720.fr</contact>
+   <max-prefixes>10</max-prefixes>
+  </peer>
+  <peer ix="sfinx">
+    <name>IDNET-UK</name>
+    <ip>194.68.129.167</ip>
+    <as>12496</as>
+    <as-set>IDNETUK</as-set>
+    <contact>matt@idnet.net.uk</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>DyneGy Europe</name>
+    <ip>194.68.129.169</ip>
+    <as>12868</as>
+    <as-set>DYNEGYEUROPE</as-set>
+    <contact>peering@dynegyeurope.com</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Flag</name>
+    <ip>194.68.129.170</ip>
+    <as>15412</as>
+    <as-set>GLOBAL</as-set>
+    <contact>noc@flagtelecom.com</contact>
+    <max-prefixes>5000</max-prefixes> <!-- Gros operateur
+    international -->
+  </peer>
+  <peer ix="sfinx">
+    <name>YACAST</name>
+    <ip>194.68.129.171</ip>
+    <as>24963</as>
+    <as-set>YACAST</as-set>
+    <contact>ldurand@yacast.fr</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Belgacom/Belbonet</name>
+    <ip>194.68.129.173</ip>
+    <as>6774</as>
+    <as-set>BELBONETOPEERS</as-set>
+    <contact>peering@belbone.be</contact>
+    <max-prefixes>3000</max-prefixes>
+  </peer>
+  <peer ix="sfinx">
+    <name>Liazo</name>
+    <ip>194.68.129.174</ip>
+    <as>50618</as>
+    <as-set>AS-LIAZO</as-set>
+    <contact>info@liazo.fr</contact>
+    <max-prefixes>100</max-prefixes>
+  </peer>
+  <peer ix="sfinx">
+    <name>Romania Data Systems</name>
+    <ip>194.68.129.175</ip>
+    <as>8708</as>
+    <as-set>RDSNET</as-set>
+    <contact>peering@rdsnet.ro</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>PT Comunicacoes</name>
+    <ip>194.68.129.176</ip>
+    <as>8657</as>
+    <as-set>CPRM</as-set>
+    <contact>peering@cprm.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>9 Telecom</name>
+    <ip>194.68.129.178</ip>
+    <as>15557</as>
+    <as-set>LDCOMNET</as-set>
+    <contact>francois-xavier.thoret@neuf.com</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Nerim</name>
+    <ip>194.68.129.181</ip>
+    <as>13193</as>
+    <contact>bouaziz@nerim.net</contact>
+    <contact>mamanis@nerim.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Belnet</name>
+    <ip>194.68.129.183</ip>
+    <as>2611</as>
+    <as-set>BELNET</as-set>
+    <contact>noc@belnet.be</contact>
+    <contact>peering@belnet.be</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>e-i.com</name>
+    <ip>194.68.129.184</ip>
+    <as>8255</as>
+  </peer>
+  <peer ix="sfinx">
+    <name>Completel</name>
+    <ip>194.68.129.188</ip>
+    <as>12670</as>
+    <as-set>COMPLETELCUSTOMERS</as-set>
+      <contact>j.blaisonneau@completel.fr</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Frontier Online</name>
+    <ip>194.68.129.191</ip>
+    <as>13049</as>
+    <as-set>FRONTIER</as-set>
+  </peer>
+  <peer ix="sfinx">
+    <name>Mgn</name>
+    <ip>194.68.129.196</ip>
+    <as>8784</as>
+    <as-set>MGN</as-set>
+    <contact>peering@mgn.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>NTL</name>
+    <ip>194.68.129.197</ip>
+    <as>5089</as>
+    <contact>Mark.Warrington@ntl.com</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Above.net/Metromedia</name>
+    <ip>194.68.129.201</ip>
+    <as>6461</as>
+    <contact>peering@above.net</contact>
+    <max-prefixes>10000</max-prefixes>
+  </peer>
+  <peer ix="sfinx">
+    <name>Sunrise</name>
+    <ip>194.68.129.213</ip>
+    <as>6730</as>
+    <as-set>GLOBAL</as-set>
+    <comments>helpdesk@sunrise.net</comments>
+    <contact>bgp@sunrise.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Globix</name>
+    <ip>194.68.129.214</ip>
+    <as>4513</as>
+    <contact>netops@globix.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <!-- MD5 y7GGt4541 -->
+    <name>Pipex</name>
+    <ip>194.68.129.215</ip>
+    <as>5413</as>
+    <as-set>PIPEX</as-set>
+    <contact>peering@pipex.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Easynet</name>
+    <ip>194.68.129.225</ip>
+    <as>4589</as>
+    <as-set>EASYNET</as-set>
+    <contact>peering@easynet.fr</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Easynet</name>
+    <ip>194.68.129.226</ip>
+    <as>4589</as>
+    <as-set>EASYNET</as-set>
+    <contact>peering@easynet.fr</contact>
+  </peer>
+  <!-- Chello plus au Sfinx 2002-09-24 -->
+  <peer ix="sfinx">
+    <name>T-online/Grolier/Club-internet</name>
+    <ip>194.68.129.219</ip>
+    <as>5410</as>
+    <contact>peering@t-online.fr</contact>
+  </peer>
+  <!-- 9 telecom disparu le 2002-10-07 -->
+  <peer ix="sfinx">
+    <name>Free/Proxad</name>
+    <ip>194.68.129.223</ip>
+    <as>12322</as>
+    <as-set>PROXAD</as-set>
+  </peer>
+  <peer ix="sfinx">
+    <name>Colt</name>
+    <ip>194.68.129.224</ip>
+    <as>8220</as>
+    <contact>bmimeur@fr.colt.net</contact>
+    <max-prefixes>3000</max-prefixes>
+  </peer>
+  <peer ix="sfinx">
+    <name>Telefonica Deutschland</name>
+    <ip>194.68.129.228</ip>
+    <as>6805</as>
+    <as-set>TDDE</as-set>
+    <contact>Najam.Saquib@telefonica.de</contact>
+    <!-- http://www.telefonica.de/peering/ -->
+    <contact>peering@telefonica.de</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Internet-FR</name>
+    <ip>194.68.129.230</ip>
+    <as>8527</as>
+    <contact>peering@internet-fr.net</contact>
+  </peer>
+<!--  fermeture du Sfinx La Bourse
+  <peer ix="sfinx">
+    <name>PSINet</name>
+    <ip>194.68.129.231</ip>
+    <as>3291</as>
+    <as-set>PSINETEU</as-set>
+    <contact>peering-help@psineteurope.com</contact>
+    <max-prefixes>2000</max-prefixes>
+  </peer> -->
+  <peer ix="sfinx">
+    <name>Libertysurf/Infonie/NoneNetwork</name>
+    <ip>194.68.129.233</ip>
+    <as>12876</as>
+    <as-set>TISCALIFR</as-set>
+    <contact>peering@libertysurf.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>AFNIC</name>
+    <ip>194.68.129.238</ip>
+    <as>2486</as>
+  </peer>
+  <peer ix="sfinx">
+    <name>Ecritel</name>
+    <ip>194.68.129.245</ip>
+    <as>8304</as>
+    <contact>fleduc@ecritel.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Noos</name>
+    <ip>194.68.129.253</ip>
+    <as>6678</as>
+  </peer>
+  <peer ix="sfinx">
+    <name>Alionis</name>
+    <ip>194.68.129.126</ip>
+    <as>34997</as>
+    <as-set>ALIONIS</as-set>
+    <contact>noc@lionis.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Kazaar</name>
+    <ip>194.68.129.120</ip>
+    <as>35189</as>
+    <as-set>KAZAAR</as-set>
+    <contact>peering@as35189.net</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Ovea</name>
+    <ip>194.68.129.114</ip>
+    <as>35217</as>
+  </peer>
+  <peer ix="sfinx">
+    <name>EBSD</name>
+    <ip>194.68.129.136</ip>
+    <as>43573</as>
+  </peer>
+  <peer ix="sfinx">
+    <name>Toile-Libre</name>
+    <ip>194.68.129.106</ip>
+    <as>48920</as>
+    <as-set>TOILE-LIBRE</as-set>
+    <contact>noc@toile-libre.net</contact>
+  </peer>
+  <peer ix="sfinx">
+   <name>Aquaray</name>
+   <ip>194.68.129.105</ip>
+   <as>41653</as>
+   <as-set>AS-AQUARAY</as-set>
+   <contact>peerings@aquaray.com</contact>
+  </peer>
+  <peer ix="sfinx">
+   <name>Neuronnexion</name>
+   <ip>194.68.129.111</ip>
+   <as>9036</as>
+   <as-set>AS-NEURONNEXION</as-set>
+   <contact>peerings@nnx.com</contact>
+  </peer>
+  <peer ix="sfinx">
+    <name>Splio</name>
+    <ip>194.68.129.115</ip>
+    <as>31688</as>
+    <as-set>SPLIO</as-set>
+    <contact>noc@splio.fr</contact>
+    <max-prefixes>20</max-prefixes>
+  </peer>
+  <peer ix="sfinx">
+    <name>France citevision</name>
+    <ip>194.68.129.177</ip>
+    <as>25187</as>
+    <as-set>AS-FCV</as-set>
+    <contact>tech@fcvnet.net</contact>
+    <max-prefixes>20</max-prefixes>
+  </peer>
+<!--  <peer ix="sfinx">
+    <name>Nerim</name>
+    <ip>2001:660:A100:2::102</ip>
+    <as>13193</as>
+    <contact>bouaziz@nerim.net</contact>
+    <prefix-out>announce-full-ip6-out</prefix-out>
+  </peer>
+-->
+
+<!-- Sfinx IPv6 
+noc-ipv6@cssi.renater.fr
+-->
+   <peer ix="sfinx">
+   <name>Renater</name>
+   <ip>2001:7f8:4e:2::102</ip>   
+    <as>2200</as>
+   <contact>peering@renater.fr</contact>
+  </peer>
+
+   <peer ix="sfinx">
+   <name>Renater</name>
+   <ip>2001:7f8:4e:2::103</ip>   
+    <as>2200</as>
+   <contact>peering@renater.fr</contact>
+  </peer>
+
+<!-- Pouix -->
+  <peer ix="pouix">
+    <name>MOGEIX</name>
+    <ip>80.67.175.2</ip>
+    <as>31576</as>
+    <contact>peering@geix.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Claranet</name>
+    <ip>80.67.175.3</ip>
+    <as>8975</as>
+    <as-set>CLARANETFR</as-set>
+    <contact>peering@fr.clara.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Externall</name>
+    <ip>80.67.175.5</ip>
+    <as>15403</as>    
+    <as-set>EUROPEASP</as-set>
+    <contact>peering@fr.externall.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Lost-Oasis</name>
+    <ip>80.67.175.7</ip>
+    <as>29075</as>
+    <as-set>IELO</as-set>
+    <contact>noc@ielo.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Galacsys</name>
+    <ip>80.67.175.9</ip>
+    <as>28855</as>    
+    <as-set>GALACSYS</as-set>
+    <contact>peering@galacsys.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Skiwebcenter</name>
+    <ip>80.67.175.11</ip>
+    <as>31235</as>    
+    <contact>peering@skiwebcenter.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Waycom</name>
+    <ip>80.67.175.13</ip>
+    <as>30889</as>
+    <as-set>WAYCOM</as-set>
+    <contact>peering@waycom.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>RelouFR</name>
+    <ip>80.67.175.14</ip>
+    <as>31375</as>
+    <contact>peering@reloufr.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>HIVANE</name>
+    <ip>80.67.175.15</ip>
+    <as>34019</as>
+    <as-set>HIVANE</as-set>
+    <contact>peering@hivane.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>CYREALIS</name>
+    <ip>80.67.175.16</ip>
+    <as>30972</as>
+    <as-set>CYREALIS</as-set>
+    <contact>peering@cyrealis.com</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>TYPHON</name>
+    <ip>80.67.175.17</ip>
+    <as>34948</as>
+    <as-set>TYPHON</as-set>
+    <contact>peering@typhon.net</contact>
+    <max-prefixes>45</max-prefixes>
+  </peer>
+  <peer ix="pouix">
+    <name>OXYMIUM</name>
+    <ip>80.67.175.18</ip>
+    <as>41157</as>
+    <as-set>OXYMIUM</as-set>
+    <contact>peering@oxymium.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>LTT</name>
+    <ip>80.67.175.26</ip>
+    <as>12682</as>
+    <as-set>LTT</as-set>
+    <contact>peering@ltt.com</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>CTN1</name>
+    <ip>80.67.175.42</ip>
+    <as>29402</as>
+    <contact>peering@ctn1.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Sivit</name>
+    <ip>80.67.175.48</ip>
+    <as>35830</as>
+    <as-set>SIVIT</as-set>
+    <contact>peering@sivit.fr</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>OXYD</name>
+    <ip>80.67.175.49</ip>
+    <as>35655</as>
+    <as-set>OXYD</as-set>
+    <contact>peering@oxyd.fr</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Kazaar</name>
+    <ip>80.67.175.50</ip>
+    <as>35189</as>
+    <as-set>KAZAAR</as-set>
+    <contact>peering@as35189.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Speka</name>
+    <ip>80.67.175.51</ip>
+    <as>34197</as>
+    <as-set>SPEKA</as-set>
+    <contact>peering@speka.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Ikoula</name>
+    <ip>80.67.175.55</ip>
+    <as>21409</as>
+    <as-set>IKOULA</as-set>
+    <contact>peering@ikoula.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Absolight</name>
+    <ip>80.67.175.57</ip>
+    <as>29608</as>
+    <as-set>W2MY</as-set>
+    <contact>noc@w2my.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Absolight</name>
+    <ip>2001:910:ff::57</ip>
+    <as>29608</as>
+    <as-set>W2MY</as-set>
+    <contact>noc@w2my.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>ADVISEO</name>
+    <ip>80.67.175.59</ip>
+    <as>35283</as>
+    <as-set>ADVISEO</as-set>
+    <contact>noc@as35283.net</contact>
+  </peer>
+  <peer ix="pouix">
+    <name>Toile-Libre</name>
+    <ip>80.67.175.61</ip>
+    <as>48920</as>
+    <as-set>TOILE-LIBRE</as-set>
+    <contact>noc@toile-libre.net</contact>
+  </peer>
+
+<!-- FreeIX -->
+
+  <peer ix="freeix">
+    <name>MESH Solutions</name>
+    <ip>213.228.3.139</ip>
+    <as>25074</as>
+    <as-set>INETBONE</as-set>
+    <contact>peering@as25074.net</contact>
+    <max-prefixes>300</max-prefixes>
+  </peer>
+  <peer ix="freeix">
+    <name>Sivit</name>
+    <ip>213.228.3.140</ip>
+    <as>35830</as>
+    <as-set>SIVIT</as-set>
+    <contact>peering@sivit.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>PT Comunicacoes</name>
+    <ip>213.228.3.149</ip>
+    <as>8657</as>
+    <as-set>CPRM</as-set>
+    <contact>peering@cprm.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Metaboli</name>
+    <ip>213.228.3.151</ip>
+    <as>33857</as>
+    <contact>peering@metaboli.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>NetServices</name>
+    <ip>213.228.3.156</ip>
+    <as>15444</as>
+    <as-set>NETSERVICES</as-set>
+    <contact>peering@netservicesplc.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>InfoClip</name>
+    <ip>213.228.3.157</ip>
+    <as>24776</as>
+    <contact>hostmaster@infoclip.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>PSInet Europe</name>
+    <ip>213.228.3.158</ip>
+    <as>3291</as>
+    <contact>peering@psineteurope.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>ISC</name>
+    <ip>213.228.3.160</ip>
+    <as>30126</as>
+    <contact>peering@isc.org</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Core ISP</name>
+    <ip>213.228.3.161</ip>
+    <as>25463</as>
+    <contact>peering@core-isp.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>9 Telecom</name>
+    <ip>213.228.3.241</ip>
+    <as>15557</as>
+    <as-set>LDCOMNET</as-set>
+    <contact>francois-xavier.thoret@neuf.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Axinet</name>
+    <ip>213.228.3.166</ip>
+    <as>8999</as>
+    <contact>peering_cbv@axinet.fr</contact>
+  </peer>
+<!-- Gyron Ltd quitte le Freeix (avril 2005)
+  <peer ix="freeix">
+    <name>Gyron Internet Ltd</name>
+    <ip>213.228.3.167</ip>
+    <as>29017</as>
+    <contact>admin@gyron.net</contact>
+  </peer> -->
+  <peer ix="freeix">
+    <name>Waycom</name>
+    <ip>213.228.3.169</ip>
+    <as>30889</as>
+    <as-set>WAYCOM</as-set>
+    <contact>peering@waycom.net</contact>
+    <map-in>freeix-backup-in</map-in>
+  </peer>
+  <peer ix="freeix">
+    <name>Transnode</name>
+    <ip>213.228.3.170</ip>
+    <as>31031</as>    
+    <as-set>AS-TRANSNODE</as-set>
+    <contact>peering@transnode.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Avence</name>
+    <ip>213.228.3.172</ip>
+    <as>30752</as>    
+    <contact>tech@avence.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>ACCLD</name>
+    <ip>213.228.3.174</ip>
+    <as>29629</as>    
+    <as-set>ACCLD</as-set>
+    <contact>peering@accld.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>CYREALIS</name>
+    <ip>213.228.3.175</ip>
+    <as>30972</as>
+    <as-set>CYREALIS</as-set>
+    <contact>peering@cyrealis.com</contact>
+    <map-in>freeix-backup-in</map-in>
+  </peer>
+  <peer ix="freeix">
+    <name>Eweka</name>
+    <ip>213.228.3.176</ip>
+    <as>12989</as>
+    <as-set>EWEKA</as-set>
+    <contact>noc@support.eweka.nl</contact>
+    <max-prefixes>2500</max-prefixes>
+  </peer>
+  <peer ix="freeix">
+    <name>TSN Internet</name>
+    <ip>213.228.3.177</ip>
+    <as>28956</as>    
+    <as-set>TSN</as-set>
+    <contact>neil@tsn.uk.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>B3G-Telecom</name>
+    <ip>213.228.3.178</ip>
+    <as>29204</as>    
+    <as-set>B3G</as-set>
+    <contact>peering@b3g-telecom</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>TAS France</name>
+    <ip>213.228.3.180</ip>
+    <as>8554</as>    
+    <as-set>TAS</as-set>
+    <contact>peering@tasfrance.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Caladan</name>
+    <ip>213.228.3.182</ip>
+    <as>20834</as>    
+    <as-set>CALADAN</as-set>
+    <contact>noc@caladan.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>BlueGix</name>
+    <ip>213.228.3.185</ip>
+    <as>8565</as>
+    <as-set>BLUEGIX</as-set>
+    <contact>peering@bluegix.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>NTL Internet</name>
+    <ip>213.228.3.186</ip>
+    <as>5089</as>    
+    <as-set>NTLI</as-set>
+    <contact>peering@ntli.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Cogent</name>
+    <ip>213.228.3.187</ip>
+    <as>174</as>
+    <as-set>COGENT</as-set>
+    <contact>peering@cogentco.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Decknet</name>
+    <ip>213.228.3.188</ip>
+    <as>29152</as>
+    <as-set>DECKNET-AS</as-set>
+    <contact>peer@decknet.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Amen</name>
+    <ip>213.228.3.189</ip>
+    <as>28677</as>
+    <as-set>AMEN-FR-AS</as-set>
+    <contact>peering@agarik.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>CTN1</name>
+    <ip>213.228.3.190</ip>
+    <as>29402</as>
+    <as-set>CTN1</as-set>
+    <contact>peering@ctn1.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>EuroCenter</name>
+    <ip>213.228.3.191</ip>
+    <as>29639</as>
+    <as-set>EUROCENTER</as-set>
+    <contact>peering@eurocenter.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Absolight</name>
+    <ip>213.228.3.192</ip>
+    <as>29608</as>
+    <as-set>W2MY</as-set>
+    <contact>noc@w2my.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Stella Net</name>
+    <ip>213.228.3.193</ip>
+    <as>16211</as>
+    <as-set>STELLA-NET</as-set>
+    <contact>peering@stella-net.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Viatel</name>
+    <ip>213.228.3.194</ip>
+    <as>8190</as>
+    <as-set>VIATEL</as-set>
+    <contact>peering@viatel.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>OvaNet</name>
+    <ip>213.228.3.195</ip>
+    <as>29415</as>
+    <as-set>OVANET</as-set>
+    <contact>peering@ovanet.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>NFrance</name>
+    <ip>213.228.3.198</ip>
+    <as>15826</as>
+  </peer>
+  <peer ix="freeix">
+    <name>V-Com Interactive</name>
+    <ip>213.228.3.199</ip>
+    <as>29215</as>
+    <as-set>VCOM</as-set>
+  </peer>
+  <peer ix="freeix">
+    <name>Pinault Printemps Redoute</name>
+    <ip>213.228.3.201</ip>
+    <as>15422</as>
+    <as-set>PPR</as-set>
+    <contact>peering@teamtel.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Lost-Oasis</name>
+    <ip>213.228.3.203</ip>
+    <as>29075</as>
+    <as-set>IELO</as-set>
+    <contact>noc@ielo.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>VIA Networks</name>
+    <ip>213.228.3.204</ip>
+    <as>5669</as>
+    <as-set>VIA</as-set>
+  </peer>
+  <peer ix="freeix">
+    <name>Poliris</name>
+    <ip>213.228.3.205</ip>
+    <as>16136</as>
+    <contact>gz-peer@poliris.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Linkbynet</name>
+    <ip>213.228.3.206</ip>
+    <as>25593</as>
+    <contact>p.aisenberg@linkbynet.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Agarik</name>
+    <ip>213.228.3.207</ip>
+    <as>16128</as>
+    <as-set>AGARIK</as-set>
+  </peer>
+  <peer ix="freeix">
+    <name>Ecritel</name>
+    <ip>213.228.3.208</ip>
+    <as>8304</as>
+    <contact>fleduc@ecritel.net</contact>
+    <contact>jmlemoine@ecritel.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Ikoula</name>
+    <ip>213.228.3.209</ip>
+    <as>21409</as>
+    <contact>peering@ikoula.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>GalacSYS</name>
+    <ip>213.228.3.211</ip>
+    <as>28855</as>
+    <as-set>GALACSYS</as-set>
+    <contact>peering@galacsys.net</contact>
+    <map-in>freeix-backup-in</map-in>
+  </peer>
+  <peer ix="freeix">
+    <name>Azuria</name>
+    <ip>213.228.3.212</ip>
+    <as>28877</as>
+    <contact>noc@azuria.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>IPERCAST</name>
+    <ip>213.228.3.213</ip>
+    <as>25286</as>
+    <contact>noc@ipercast.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>WebTech</name>
+    <ip>213.228.3.214</ip>
+    <as>25345</as>
+    <contact>noc@webtech.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Completel</name>
+    <ip>213.228.3.215</ip>
+    <as>12670</as>
+    <as-set>COMPLETEL</as-set>
+    <contact>m.rapoport@CompleTel.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>OpenWeb</name>
+    <ip>213.228.3.216</ip>
+    <as>20650</as>
+    <contact>piery.garot@as20650.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>NC Numericable</name>
+    <ip>213.228.3.217</ip>
+    <as>21502</as>
+    <contact>noc@ncnumericable.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>TrueServer</name>
+    <ip>213.228.3.218</ip>
+    <as>15703</as>
+    <as-set>TRUESERVER</as-set>
+    <contact>peering@trueserver.nl</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Deine</name>
+    <ip>213.228.3.219</ip>
+    <as>21163</as>
+    <comments>http://lg.deine.net/</comments>
+    <contact>noc@deine.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Carpediem</name>
+    <ip>213.228.3.221</ip>
+    <as>16080</as>
+    <contact>peering@carpediem.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>YACAST</name>
+    <ip>213.228.3.222</ip>
+    <as>24963</as>
+    <as-set>YACAST</as-set>
+    <contact>ldurand@yacast.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Placenet</name>
+    <ip>213.228.3.223</ip>
+    <as>24702</as>    
+    <as-set>PLACENET</as-set>
+    <contact>noc@placenet.org</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Easynet</name>
+    <ip>213.228.3.226</ip>
+    <as>4589</as>
+    <as-set>EASYNET</as-set>
+    <contact>peering@easynet.fr</contact>
+    <map-in>freeix-backup-in</map-in>
+  </peer>
+  <peer ix="freeix">
+    <name>Claranet</name>
+    <ip>213.228.3.227</ip>
+    <as>8975</as>
+    <as-set>CLARANETFR</as-set>
+    <contact>peering@fr.clara.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>MGN</name>
+    <ip>213.228.3.228</ip>
+    <as>8784</as>
+    <comments>http://www.mgn.net/</comments>
+    <contact>peering@mgn.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Atos Origin Multimedia</name>
+    <ip>213.228.3.229</ip>
+    <as>8677</as>
+    <contact>peering@atosorigin.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Tiscali</name>
+    <ip>213.228.3.230</ip>
+    <as>12876</as>
+    <as-set>TISCALIFR</as-set>
+    <contact>frederic.le_brigand@fr.tiscali.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>T-online/Grolier/Club-internet</name>
+    <ip>213.228.3.231</ip>
+    <as>5410</as>
+    <contact>peering@t-online.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>France Teaser</name>
+    <ip>213.228.3.235</ip>
+    <as>13273</as>
+    <contact>peering@teaser.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Internet-FR</name>
+    <ip>213.228.3.236</ip>
+    <as>8527</as>
+    <contact>peering@internet-fr.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>COLT TELECOM</name>
+    <ip>213.228.3.239</ip>
+    <as>8220</as>
+    <contact>peering@fr.colt.net</contact>
+    <max-prefixes>3000</max-prefixes>
+  </peer>
+  <peer ix="freeix">
+    <name>Fluxus</name>
+    <ip>213.228.3.240</ip>
+    <as>5436</as>
+    <contact>didier.mangion@fluxus.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>LambdaNet</name>
+    <ip>213.228.3.243</ip>
+    <as>13237</as>
+    <as-set>LAMBDANET</as-set>
+    <contact>peering@lambdanet.net</contact>
+    <max-prefixes>2000</max-prefixes>
+  </peer>
+  <peer ix="freeix">
+    <name>Ovh</name>
+    <ip>213.228.3.244</ip>
+    <as>16276</as>
+    <comments>http://www.ovh.net/</comments>
+    <contact>ovh@ovh.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>ORNIS</name>
+    <ip>213.228.3.246</ip>
+    <as>8399</as>    
+    <as-set>ORNIS</as-set>
+    <contact>peering@ornis.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>SdV Plurimedia</name>
+    <ip>213.228.3.247</ip>
+    <as>8839</as>
+    <contact>peering@sdv.fr</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Frontier Online</name>
+    <ip>213.228.3.248</ip>
+    <as>13049</as>
+    <as-set>FRONTIER</as-set>
+    <contact>peering@ornis.com</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Free/Proxad</name>
+    <ip>213.228.3.250</ip>
+    <as>12322</as>
+    <as-set>PROXAD</as-set>
+  </peer>
+  <peer ix="freeix">
+    <name>Nerim</name>
+    <ip>213.228.3.251</ip>
+    <as>13193</as>
+    <contact>bouaziz@nerim.net</contact>
+    <contact>mamanis@nerim.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>REDNET</name>
+    <ip>213.228.3.252</ip>
+    <as>8586</as>
+    <as-set>REDNET</as-set>
+    <contact>peering@red.net</contact>
+  </peer>
+  <peer ix="freeix">
+    <name>Externall</name>
+    <ip>213.228.3.253</ip>
+    <as>15403</as>    
+    <as-set>EUROPEASP</as-set>
+    <contact>peering@fr.externall.net</contact>
+  </peer>
+
+
+  <peer ix="freeix">
+    <name>Nerim</name>
+    <ip>2001:7f8:1E::251</ip>
+    <as>13193</as>
+    <contact>bouaziz@nerim.net</contact>
+    <prefix-out>announce-full-ip6-out</prefix-out>
+  </peer>
+
+<!-- GEIX -->
+  <peer ix="geix">
+    <name>MOGEIX</name>
+    <ip>80.67.163.1</ip>
+    <as>31576</as>
+    <!-- <as-set>ADVISEO</as-set> -->
+    <contact>peering@geix.net</contact>
+    <max-prefixes>10000</max-prefixes>
+  </peer>
+  <peer ix="geix">
+    <name>ADVISEO</name>
+    <ip>80.67.163.64</ip>
+    <as>35283</as>
+    <as-set>ADVISEO</as-set>
+    <contact>noc@as35283.net</contact>
+  </peer>
+<!--
+  <peer ix="pouix">
+    <name>OXYD</name>
+    <ip>80.67.163.69</ip>
+    <as>35655</as>
+    <as-set>OXYD</as-set>
+    <contact>peering@oxyd.fr</contact>
+  </peer>
+-->
+  <peer ix="geix">
+    <name>Sivit</name>
+    <ip>80.67.163.73</ip>
+    <as>35830</as>
+    <as-set>SIVIT</as-set>
+    <contact>peering@sivit.fr</contact>
+  </peer>
+
+<!-- PaNaP -->
+  <peer ix="panap">
+    <name>NFSi</name>
+    <ip>62.35.254.137</ip>
+    <as>25137</as>
+    <as-set>NFSI</as-set>
+    <contact>noc@nfsi.pt</contact>
+  </peer>
+  <peer ix="panap">
+    <name>Celeonet</name>
+    <ip>62.35.254.83</ip>
+    <as>31178</as>
+    <contact>peering@celeonet.fr</contact>
+  </peer>
+  <peer ix="panap">
+    <name>INIT 7</name>
+    <ip>62.35.254.94</ip>
+    <as>13030</as>
+    <contact>peering@init7.net</contact>
+  </peer>
+  <peer ix="panap">
+    <name>Witbe</name>
+    <ip>62.35.254.140</ip>
+    <as>15436</as>
+    <contact>noc@witbe.net</contact>
+  </peer>
+  <peer ix="panap">
+    <name>T-online/Grolier/Club-internet</name>
+    <ip>62.35.254.1</ip>
+    <as>5410</as>
+    <contact>peering@t-online.fr</contact>
+  </peer>
+  <peer ix="panap">
+    <name>NC Numericable</name>
+    <ip>62.35.254.25</ip>
+    <as>21502</as>
+    <contact>noc@ncnumericable.com</contact>
+  </peer>
+  <peer ix="panap">
+    <name>LambdaNet</name>
+    <ip>62.35.254.30</ip>
+    <as>13237</as>
+    <as-set>LAMBDANET</as-set>
+    <contact>peering@lambdanet.net</contact>
+    <max-prefixes>2000</max-prefixes>
+  </peer>
+  <peer ix="panap">
+    <name>Kazaar</name>
+    <ip>62.35.254.33</ip>
+    <as>35189</as>
+    <as-set>KAZAAR</as-set>
+    <contact>peering@as35189.net</contact>
+  </peer>
+  <peer ix="panap">
+    <name>Absolight</name>
+    <ip>62.35.254.42</ip>
+    <as>29608</as>
+    <as-set>W2MY</as-set>
+    <contact>noc@w2my.net</contact>
+  </peer>
+  <peer ix="panap">
+    <name>Transnode</name>
+    <ip>62.35.254.45</ip>
+    <as>31031</as>    
+    <as-set>AS-TRANSNODE</as-set>
+    <contact>peering@transnode.com</contact>
+  </peer>
+  <peer ix="panap">
+    <name>Lixium</name>
+    <ip>62.35.254.59</ip>
+    <as>39600</as>    
+    <as-set>AS-EUROSV</as-set>
+    <contact>peering@transnode.com</contact>
+  </peer>
+  <peer ix="panap">
+    <name>Hivane</name>
+    <ip>62.35.254.61</ip>
+    <as>34019</as>    
+    <as-set>AS-HIVANE</as-set>
+    <contact>peering@hivane.net</contact>
+  </peer>
+  <peer ix="panap">
+    <name>OXYMIUM</name>
+    <ip>62.35.254.71</ip>
+    <as>41157</as>
+    <as-set>OXYMIUM</as-set>
+    <contact>peering@oxymium.net</contact>
+  </peer>
+  <peer ix="panap">
+    <name>France Teaser</name>
+    <ip>62.35.254.96</ip>
+    <as>13273</as>
+    <as-set>TEASER</as-set>
+    <contact>peering@teaser.fr</contact>
+  </peer>
+  <peer ix="panap">
+    <name>Telecomplete</name>
+    <ip>62.35.254.112</ip>
+    <as>6320</as>
+    <as-set>TELECOMPLETE</as-set>
+    <contact>noc@telecomplete.net</contact>
+  </peer>
+  <peer ix="panap">
+    <name>Splio</name>
+    <ip>62.35.254.75</ip>
+    <as>31688</as>
+    <as-set>SPLIO</as-set>
+    <contact>noc@splio.fr</contact>
+    <max-prefixes>20</max-prefixes>
+  </peer>
+<!--  down depuis 1 an
+  <peer ix="panap">
+    <name>Jet Multimedia</name>
+    <ip>62.35.254.78</ip>
+    <as>12566</as>
+    <as-set>JETMULTIMEDIA</as-set>
+    <contact>noc@splio.fr</contact>
+  </peer>
+-->
+<!--  down depuis 1 an
+  <peer ix="panap">
+    <name>LimeLight Network</name>
+    <ip>62.35.254.90</ip>
+    <as>22822</as>
+    <as-set>LLNW</as-set>
+    <contact>peering@llnw.com</contact>
+    <max-prefixes>800</max-prefixes>
+  </peer>
+-->
+  <peer ix="panap">
+    <name>Hurricane Electric</name>
+    <ip>62.35.254.111</ip>
+    <as>6939</as>
+    <as-set>HURRICANE</as-set>
+    <contact>jmeyer@he.net</contact>
+    <max-prefixes>20000</max-prefixes>
+  </peer>
+  <peer ix="panap">
+    <name>EURO-WEB</name>
+    <ip>62.35.254.52</ip>
+    <as>35393</as>
+    <as-set>EUROWEB</as-set>
+    <contact>noc@euro-web.fr</contact>
+    <max-prefixes>10</max-prefixes>
+  </peer>
+  <peer ix="panap">
+    <name>PPR</name>
+    <ip>62.35.254.133</ip>
+    <as>15422</as>
+    <as-set>PPR</as-set>
+    <contact>noc@ppr.com</contact>
+    <max-prefixes>10</max-prefixes>
+  </peer>
+<!--  down depuis 1 an
+  <peer ix="panap">
+    <name>Typhon</name>
+    <ip>62.35.254.65</ip>
+    <as>34948</as>
+    <as-set>TYPHON</as-set>
+    <contact>noc@typhon.com</contact>
+    <max-prefixes>45</max-prefixes>
+  </peer> -->
+  <peer ix="panap">
+    <name>Claranet</name>
+    <ip>62.35.254.20</ip>
+    <as>8426</as>
+    <as-set>CLARANET</as-set>
+    <contact>peering@fr.clara.net</contact>
+    <max-prefixes>300</max-prefixes>
+  </peer>
+<!--  down depuis 1 an
+  <peer ix="panap">
+    <name>Easynet</name>
+    <ip>62.35.254.27</ip>
+    <as>4589</as>
+    <as-set>EASYNET</as-set>
+    <contact>peering@easynet.fr</contact>
+  </peer>
+-->
+  <peer ix="panap">
+    <name>EBSD</name>
+    <ip>62.35.254.109</ip>
+    <as>43573</as>
+  </peer>
+  <peer ix="panap">
+    <name>PCH/42</name>
+    <ip>62.35.254.139</ip>
+    <as>42</as>
+    <as-set>AS-PCH</as-set>
+    <contact>peering@pch.net</contact>
+    <max-prefixes>100</max-prefixes>
+  </peer>
+<!--  down depuis 1 an
+  <peer ix="panap">
+    <name>PCH/3856</name>
+    <ip>62.35.254.142</ip>
+    <as>3856</as>
+    <as-set>AS-PCH</as-set>
+    <contact>peering@pch.net</contact>
+    <max-prefixes>100</max-prefixes>
+  </peer>
+-->
+  <peer ix="panap">
+    <name>Eliott Ness</name>
+    <ip>62.35.254.76</ip>
+    <as>39286</as>
+    <contact>peering@eliott-ness.com</contact>
+    <max-prefixes>10</max-prefixes>
+  </peer>
+  <peer ix="panap">
+    <name>COMSTAR-Direct</name>
+    <ip>62.35.254.148</ip>
+    <as>8359</as>
+    <as-set>AS-MTU</as-set>
+    <contact>peering@comstar-direct.ru</contact>
+    <max-prefixes>10000</max-prefixes>
+  </peer>
+  <peer ix="panap">
+    <name>Celeste</name>
+    <ip>62.35.254.144</ip>
+    <as>34177</as>
+    <as-set>CELESTE</as-set>
+    <contact>vmialon@celeste.fr</contact>
+    <max-prefixes>15</max-prefixes>
+  </peer>
+  <peer ix="panap">
+   <name>multi-visp</name>
+   <ip>62.35.254.93</ip>
+   <as>34021</as>
+   <as-set>AS-MULTI-VISP</as-set>
+   <contact>noc@multi-visp.com</contact>
+   <max-prefixes>40</max-prefixes>
+  </peer>
+  <peer ix="panap">
+   <name>opencarrier</name>
+   <ip>62.35.254.147</ip>
+   <as>41692</as>
+   <as-set>AS-OPENCARRIER</as-set>
+   <contact>noc@opencarrier.eu</contact>
+   <max-prefixes>250</max-prefixes>
+  </peer>
+  <peer ix="panap">
+   <name>Toile-Libre</name>
+   <ip>62.35.254.159</ip>
+   <as>48920</as>
+   <as-set>AS-TOILE-LIBRE</as-set>
+   <contact>noc@toile-libre.net</contact>
+   <max-prefixes>250</max-prefixes>
+  </peer>
+  <peer ix="panap">
+   <name>Nexen</name>
+   <ip>62.35.254.136</ip>
+   <as>41628</as>
+   <as-set>AS-NEXEN</as-set>
+   <contact>peering@nexen.alterway.fr</contact>
+   <max-prefixes>10</max-prefixes>
+  </peer>
+  <peer ix="panap">
+   <name>ReTN</name>
+   <ip>62.35.254.138</ip>
+   <as>9002</as>
+   <as-set>RETN-AS</as-set>
+   <contact>peering@retn.net</contact>
+   <max-prefixes>20000</max-prefixes>
+  </peer>
+  <peer ix="pouix">
+    <name>GIXE</name>
+    <ip>62.35.254.74</ip>
+    <as>31576</as>
+    <contact>peering@gixe.net</contact>
+  </peer>
+</peers>
+
+<!-- Demandes de peering refusées ou bien retardées. Merci de preciser -->
+<!-- les dates -->
+
+<!-- dim mai  9 15:46:48 CEST 2004
+
+  <peer ix="freeix">
+    <name>BSO Communication</name>
+    <ip>213.228.3.168</ip>
+    <as>31216</as>
+    <contact>peering@bsocom.com</contact>
+  </peer>
+-->
+
+<!-- AS8220, Colt, peerings restaurés le 8 janvier 2004 - lulu -->

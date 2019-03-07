@@ -1,0 +1,29 @@
+#!/usr/bin/python
+
+import sys
+import re
+import __main__
+
+template = re.compile ("(.*?)<:\s*(.*?)\s*:>(.*)", re.DOTALL)
+
+def process (lines):
+    result = template.match (lines)
+    if result:
+        text = result.group(1)
+        code = result.group(2)
+        rest = result.group(3)
+        print text,
+        try:
+            print (eval (code)),
+        except SyntaxError:
+            exec (code + "\n") in __main__.__dict__
+        process (rest)
+    else:
+        print lines,
+        
+line = sys.stdin.readline()
+lines = line
+while line:
+    line = sys.stdin.readline()
+    lines = lines + line
+process (lines)

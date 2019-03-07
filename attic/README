@@ -1,0 +1,30 @@
+Pour ajouter ou changer un "peer", éditez le fichier peers.xml. Il est
+recommandé d'utiliser un éditeur sensible au XML comme Emacs avec le
+mode psgml.
+
+Ensuite, utilisez les commandes suivantes : 
+
+make all 
+	pour creer les fichiers de config bgp et mettre a jour les pages web des Peers
+make ripe 
+	pour creer le fichier signe pgp pour le RIPE (necessite la cle de Gitoyen)
+make ripe-send
+	pour creer la fichier signe pgp pour le RIPE et l'envoyer au RIPE :)
+make clean
+	pour nettoyer ce dossier des vieux machins inutiles.
+
+8<----------------------------------------------------------------------------
+Les infos qu'on a toujours besoin de ressortir :
+
+We are :        Gitoyen
+AS              20766
+Macro           AS-GITOYEN
+Email           peering@gitoyen.net
+Policy          open
+
+Sfinx - 194.68.129.186 sur 10.0.0.61 (gixe-dws4802-12n6-th2-par)
+FreeIX - 213.228.3.249 sur 10.0.0.23 (notux)
+Pouix - 80.67.175.1 sur 10.0.0.23 (notux)
+Panap - 62.35.254.66 sur 10.0.0.16 (giga)
+GEIX - 80.67.163.66 sur 10.0.0.18 (gizo)
+

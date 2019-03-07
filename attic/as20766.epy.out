@@ -1,0 +1,70 @@
+aut-num:      AS20766
+as-name:      GITOYEN-MAIN-AS
+descr:        The main Autonomous System of Gitoyen (Paris, France).
+
+import:       from AS1299
+              action pref=100;
+              accept ANY
+import:       from AS6461
+              action pref=100;
+              accept ANY
+export:       to AS1299
+              announce AS-GITOYEN
+export:       to AS6461
+              announce AS-GITOYEN
+
+admin-c:      SB4267-RIPE
+admin-c:      FC2409-RIPE
+admin-c:      PB401
+tech-c:       GI1036-RIPE
+notify:       noc@gitoyen.net
+mnt-by:       Gitoyen-NCC
+remarks:      --
+remarks:      Open peering policy: just ask peering@gitoyen.net
+remarks:      --
+remarks:      Technical problems or questions: noc@gitoyen.net
+remarks:      --
+remarks:      Looking Glass: http://lookinglass.gitoyen.net/
+remarks:      --
+changed:      noc@gitoyen.net 20020122
+
+1011734868.7.
+
+<python>
+from xml.dom.ext.reader import Sax
+from xml.dom import Node
+
+peersfile = "/usr/local/gitoyen-peers/peers.xml"
+neighbors = {}
+
+def visit(node):
+    if node.nodeType == Node.ELEMENT_NODE:
+        if node.nodeName == "peer":
+            neighbor = {}
+            for element in node.childNodes:
+                if element.nodeName == "name":
+                    neighbor["name"] = element.childNodes[0].nodeValue
+                elif element.nodeName == "as":
+                    neighbor["as"] = element.childNodes[0].nodeValue
+                elif element.nodeName == "as-set":
+                    neighbor["as-set"] = element.childNodes[0].nodeValue
+        if (not neighbors.has_key(neighbor["name"])):
+            neighbors[neighbor["name"]] = neighbor
+    return None
+
+if __name__ == '__main__':
+    tree = Sax.FromXmlFile(peersfile)    
+    for peer in tree.documentElement.childNodes:
+        visit(peer)
+    for name in neighbors.keys():
+        peer = neighbors[name]
+        print "import:    from AS" + str(peer["as"])
+        print "     action pref=100;"
+        if (peer.has_key("as-set")):
+            print "     accept AS-" + str(peer["as-set"])
+        else:
+            print "     accept AS" + str(peer["as"])
+        print "export:    to AS" + str(peer["as"])
+        print "     announce AS-GITOYEN"
+
+</python>

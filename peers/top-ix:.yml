@@ -1,0 +1,91 @@
+42:
+  description: Packet Clearing House AS42
+  export: MDW-MAIN-AS
+  import: AS-PCH
+  limit_ipv4: 600
+  limit_ipv6: 600
+  local_pref: 178
+  med: 241
+  peerings:
+  - 194.116.96.58
+  - 2001:7f8:23:ffff::27
+2906:
+  description: Netflix
+  export: MDW-MAIN-AS
+  import: as-nflx
+  limit_ipv4: 250
+  limit_ipv6: 250
+  local_pref: 202
+  med: 217
+  peerings:
+  - 194.116.96.90
+  - 2001:7f8:23:ffff::90
+  - 194.116.96.96
+  - 2001:7f8:23:ffff::96
+3856:
+  description: Packet Clearing House
+  export: MDW-MAIN-AS
+  import: AS-PCH
+  limit_ipv4: 1
+  limit_ipv6: 1
+  local_pref: 200
+  med: 219
+  peerings:
+  - 194.116.96.59
+  - 2001:7f8:23:ffff::13
+6939:
+  description: Hurricane Electric
+  export: MDW-MAIN-AS
+  import: RADB::AS-HURRICANE RADB::AS-HURRICANEv6
+  limit_ipv4: 169000
+  limit_ipv6: 36000
+  local_pref: 198
+  med: 221
+  peerings:
+  - 194.116.96.87
+  - 2001:7f8:23:ffff::87
+9036:
+  description: Neuronnexion
+  export: MDW-MAIN-AS
+  import: AS-NEURONNEXION
+  limit_ipv4: 40
+  limit_ipv6: 1
+  local_pref: 218
+  med: 201
+  peerings:
+  - 194.116.96.238
+19679:
+  description: Dropbox
+  export: MDW-MAIN-AS
+  import: AS-DROPBOX
+  limit_ipv4: 100
+  limit_ipv6: 50
+  local_pref: 220
+  med: 200
+  peerings:
+  - 194.116.96.95
+  - 2001:7f8:23:ffff::95
+32934:
+  description: Facebook Inc
+  export: MDW-MAIN-AS
+  import: AS-FACEBOOK
+  limit_ipv4: 100
+  limit_ipv6: 100
+  local_pref: 185
+  med: 234
+  peerings:
+  - 194.116.96.92
+  - 2001:7f8:23:ffff::92
+  - 194.116.96.93
+  - 2001:7f8:23:ffff::93
+57976:
+  description: Blizzard Entertainment
+  export: MDW-MAIN-AS
+  import: RADB::AS-BLIZZARD
+  limit_ipv4: 200
+  limit_ipv6: 50
+  local_pref: 201
+  med: 218
+  peerings:
+  - 194.116.96.43
+  - 2001:7f8:23:ffff::43

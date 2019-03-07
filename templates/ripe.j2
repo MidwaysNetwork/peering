@@ -1,0 +1,5 @@
+remarks:        #{{ description }}
+mp-import:      afi ipv4.unicast from AS{{ neighbor_as }} accept {{ import_as }}
+mp-export:      afi ipv4.unicast to AS{{ neighbor_as }} announce AS-MIDWAYSNETWORK
+mp-import:      afi ipv6.unicast from AS{{ neighbor_as }} accept {{ import_as }}
+mp-export:      afi ipv6.unicast to AS{{ neighbor_as }} announce AS-MIDWAYSNETWORK

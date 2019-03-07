@@ -1,0 +1,32 @@
+<!--
+     Copyright Stephane Bortzmeyer <bortzmeyer@gitoyen.net> 
+  -->
+
+<!ELEMENT peers (peer)+> 
+
+<!ELEMENT peer (name,ip,as,as-set?,comments?,contact*, prefix-in?, prefix-out?, map-in?, map-out?, max-prefixes?)>
+<!ATTLIST peer ix (sfinx|pouix|freeix|geix|panap) #REQUIRED>
+
+<!ELEMENT comments (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT ip (#PCDATA)>
+<!ELEMENT as (#PCDATA)>
+<!ELEMENT as-set (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+
+<!ELEMENT prefix-in (#PCDATA)>
+<!ELEMENT prefix-out (#PCDATA)>
+<!ELEMENT map-in (#PCDATA)>
+<!ELEMENT map-out (#PCDATA)>
+
+<!ELEMENT max-prefixes (#PCDATA)>
+
+
+
+
+
+
+
+
+
+

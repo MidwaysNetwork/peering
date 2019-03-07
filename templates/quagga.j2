@@ -1,0 +1,16 @@
+# vtysh
+conf t
+router bgp 20766
+neighbor {{ neighbor_ipv4 }} remote-as {{ neighbor_as }}
+neighbor {{ neighbor_ipv4 }} peer-group {{ ix4_name }}
+neighbor {{ neighbor_ipv4 }} description "====== {{ description }}"
+{%- if limit_ipv4 %}
+neighbor {{ neighbor_ipv4 }} maximum-prefix {{ limit_ipv4 }}
+{%- endif %}
+neighbor {{ neighbor_ipv6 }} remote-as {{ neighbor_as }}
+neighbor {{ neighbor_ipv6 }} description "====== {{ description }}"
+address-family ipv6
+neighbor {{ neighbor_ipv6 }} peer-group {{ ix6_name }}
+{%- if limit_ipv6 %}
+neighbor {{ neighbor_ipv6 }} maximum-prefix {{ limit_ipv6 }}
+{%- endif %}

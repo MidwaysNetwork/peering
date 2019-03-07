@@ -1,0 +1,1 @@
+git remote set-url --add origin git+ssh://gogs@code.ffdn.org:55555/gitoyen/peering.git

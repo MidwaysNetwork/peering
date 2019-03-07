@@ -1,0 +1,11 @@
+remarks:
+remarks:    =========================
+admin-c:        NM7256-RIPE
+tech-c:         NM7256-RIPE
+sponsoring-org: ORG-GG4-RIPE
+status:         ASSIGNED
+mnt-by:         RIPE-NCC-END-MNT
+notify:         noc@midways-network.org
+mnt-by:         MDW-NCC
+mnt-by:         Gitoyen-NCC
+source:         RIPE

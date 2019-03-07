@@ -1,0 +1,20 @@
+Peerings
+
+La gestion des peerings de gitoyen est centralisée sur machoke dans le dossier /usr/local/gitoyen-peers
+
+Pour ajouter un peer à gitoyen, il faut procéder dans ce sens :
+
+    Modification du fichier peers.xml. Utiliser de préférence un editeur comme emacs avec psgml pour valider à la volée le xml obtenu.
+    lancer make install (en tant que root ou membre du groupe gitoyen)
+    lancer make ripe pour reconstruire l'objet ripe dans as20766.txt.asc (en tant que NON root et avec la clé du NOC dans votre gpg)
+    Insérer dans la config bgp du routeur qui va bien le nouveau peer : telnet bgpd puis insérer les lignes dans la conf (comme un cisco), ne pas oublier le "write memory" et le "/root/save_cfg -a" 
+
+Voici la liste des fichiers de ce dossier et leur utilisation :
+
+    README
+    Makefile Fichier Makefile. Contient les makes "install" et "ripe"
+    as20766.txt Fichier texte contenant la mise à jour de l'objet RIPE de Gitoyen construit par make install
+    as20766.txt.asc Version signée pgp de as20766.txt. construit par make ripe, mais nécessite la clé de gitoyen (demander à root@…) dans ~/.gnupg/
+    peers-IX?-bgpd.conf contient la config bgp pour chaque peering.
+    peers.dtd contient la description du fichier xml qui suit
+    peers.xml contient la liste des peers de gitoyen. C'est ce fichier qu'il faut modifier lorsqu'il y a un nouveau peer. 

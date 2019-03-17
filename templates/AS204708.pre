@@ -44,5 +44,10 @@ mp-import:  afi ipv4.unicast from AS25309 accept ANY
 mp-export:  afi ipv4.unicast to AS25309 announce AS-MIDWAYSNETWORK
 mp-import:  afi ipv6.unicast from AS25309 accept ANY
 mp-export:  afi ipv6.unicast to AS25309 announce AS-MIDWAYSNETWORK
-remarks:         
-
+remarks:
+remarks:    # Lu-CIX
+mp-import:  afi ipv4.unicast from AS49624 accept ANY
+mp-export:  afi ipv4.unicast to AS49624 announce AS-MIDWAYSNETWORK
+mp-import:  afi ipv6.unicast from AS25309 accept ANY
+mp-export:  afi ipv6.unicast to AS49624 announce AS-MIDWAYSNETWORK
+remarks:

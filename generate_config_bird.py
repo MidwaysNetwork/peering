@@ -76,7 +76,7 @@ def parse_peers(peer_file):
                                  import_as=peerings[asn]['import'],
                                  neighbor_ipv6=neighbor_ipv6, ix_name=
                                  ixp, ix_name_strip=ixp.replace('-', '').replace(':', ''), limit_ipv6=limit_ipv6,
-                                 session_num=session6, med=peerings[asn]['med'], local_pref=peerings[asn]['local_pref']).encode('utf-8').strip()
+                                 session_num=session6, med=peerings[asn]['med']).encode('utf-8').strip()
                 out6 += '\n'
             if 'neighbor_ipv4' in locals() and type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv4Address:
                 # Generate IPV4
@@ -86,7 +86,7 @@ def parse_peers(peer_file):
                 peerings[asn]['description'], export_as=peerings[asn]['export'],
                                  import_as=peerings[asn]['import'], neighbor_ipv4=
                                  neighbor_ipv4, ix_name=ixp, ix_name_strip=ixp.replace('-', '').replace(':', ''),
-                                 limit_ipv4=limit_ipv4, session_num=session4, med=peerings[asn]['med'], local_pref=peerings[asn]['local_pref']).encode('utf-8').strip()
+                                 limit_ipv4=limit_ipv4, session_num=session4, med=peerings[asn]['med']).encode('utf-8').strip()
                 out4 += '\n'
         with open("bird4/" + "as" + str(asn) + '.conf', 'aw+') as outfile:
             outfile.write(out4)

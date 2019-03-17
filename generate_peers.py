@@ -53,11 +53,17 @@ for factory in gitoyen_peering_factory:
 		    latency = ping.quiet_ping(routeur['ipaddr4'])[1]
                     if latency is None:
                         latency = 0
-		    peer[name][asn]['med'] = int(200 + latency)
-		    peer[name][asn]['local_pref'] = int(220 - latency)
+		    base = 500
+		    if 'lu-cix' in name:
+			base = 295
+		    if 'top-ix' in name:
+			base = 390
+		    if 'france' in name:
+			base = 200
+		    peer[name][asn]['med'] = int(base + latency)
                     print(
                         "Generating configuration at " + name + " for the router " + str(routeur['ipaddr4']) + " of the AS " + str(
-                            asn) + " " + peer[name][asn]['description']+ " " + str(latency) + " med " + str(peer[name][asn]['med']) + " pref "+ str(peer[name][asn]['local_pref']))
+                            asn) + " " + peer[name][asn]['description']+ " " + str(latency) + " med " + str(peer[name][asn]['med']))
                 if routeur['ipaddr6'] is not None:
                     peer[name][asn]['peerings'].append(routeur['ipaddr6'])
                     print(

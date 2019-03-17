@@ -4,8 +4,7 @@
   import: as-nflx
   limit_ipv4: 250
   limit_ipv6: 250
-  local_pref: 205
-  med: 214
+  med: 330
   peerings:
   - 188.93.170.90
   - 2001:7f8:4c::b5a:1
@@ -17,8 +16,7 @@
   import: RADB::AS-HURRICANE RADB::AS-HURRICANEv6
   limit_ipv4: 169000
   limit_ipv6: 36000
-  local_pref: 212
-  med: 207
+  med: 301
   peerings:
   - 188.93.170.43
   - 2001:7f8:4c::1b1b:1
@@ -28,8 +26,7 @@
   import: AS-NEURONNEXION
   limit_ipv4: 40
   limit_ipv6: 1
-  local_pref: 217
-  med: 202
+  med: 296
   peerings:
   - 188.93.170.68
 13335:
@@ -38,8 +35,7 @@
   import: AS-CLOUDFLARE
   limit_ipv4: 500
   limit_ipv6: 100
-  local_pref: 208
-  med: 211
+  med: 301
   peerings:
   - 188.93.170.100
   - 2001:7f8:4c::3417:1
@@ -49,19 +45,27 @@
   import: AS-OPENPEERING
   limit_ipv4: 5000
   limit_ipv6: 500
-  local_pref: -1440
-  med: 1860
+  med: 309
   peerings:
   - 188.93.170.47
   - 2001:7f8:4c::5052:1
+20940:
+  description: Akamai Technologies
+  export: MDW-MAIN-AS
+  import: AS-AKAMAI
+  limit_ipv4: 6500
+  limit_ipv6: 1500
+  med: 309
+  peerings:
+  - 188.93.170.95
+  - 2001:7f8:4c::51cc:1
 29169:
   description: Gandi
   export: MDW-MAIN-AS
   import: AS-GANDI
   limit_ipv4: 50
   limit_ipv6: 20
-  local_pref: 205
-  med: 214
+  med: 301
   peerings:
   - 188.93.170.57
   - 2001:7f8:4c::71f1:1
@@ -71,8 +75,7 @@
   import: RIPE::AS-LUXNETWORK
   limit_ipv4: 500
   limit_ipv6: 150
-  local_pref: 208
-  med: 211
+  med: 303
   peerings:
   - 188.93.170.56
   - 2001:7f8:4c::731b:1
@@ -84,8 +87,7 @@
   import: CONOSTIX
   limit_ipv4: 2
   limit_ipv6: 0
-  local_pref: 208
-  med: 211
+  med: 301
   peerings:
   - 188.93.170.31
   - 2001:7f8:4c::3043:c:1

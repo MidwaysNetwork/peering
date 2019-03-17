@@ -11,7 +11,7 @@ protocol bgp {{ ix_name_strip  }}_{{ neighbor_as }}{%- if session_num > 1 %}_{{ 
         accept;
     };
     import filter {
-        if ! check_import6({{ neighbor_as }},{{ neighbor_ipv6 }},"peering",{{ med }},{{ local_pref}}) then reject;
+        if ! check_import6({{ neighbor_as }},{{ neighbor_ipv6 }},"peering",{{ med }}) then reject;
         accept;
     };
 

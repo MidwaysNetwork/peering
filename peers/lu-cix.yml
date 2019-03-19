@@ -4,7 +4,7 @@
   import: as-nflx
   limit_ipv4: 250
   limit_ipv6: 250
-  med: 330
+  med: 306
   peerings:
   - 188.93.170.90
   - 2001:7f8:4c::b5a:1
@@ -16,7 +16,7 @@
   import: RADB::AS-HURRICANE RADB::AS-HURRICANEv6
   limit_ipv4: 169000
   limit_ipv6: 36000
-  med: 301
+  med: 302
   peerings:
   - 188.93.170.43
   - 2001:7f8:4c::1b1b:1
@@ -26,7 +26,7 @@
   import: AS-NEURONNEXION
   limit_ipv4: 40
   limit_ipv6: 1
-  med: 296
+  med: 300
   peerings:
   - 188.93.170.68
 13335:
@@ -55,7 +55,7 @@
   import: AS-AKAMAI
   limit_ipv4: 6500
   limit_ipv6: 1500
-  med: 309
+  med: 311
   peerings:
   - 188.93.170.95
   - 2001:7f8:4c::51cc:1
@@ -75,7 +75,7 @@
   import: RIPE::AS-LUXNETWORK
   limit_ipv4: 500
   limit_ipv6: 150
-  med: 303
+  med: 301
   peerings:
   - 188.93.170.56
   - 2001:7f8:4c::731b:1

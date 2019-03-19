@@ -4,7 +4,7 @@
   import: AS-PCH
   limit_ipv4: 600
   limit_ipv6: 600
-  med: 414
+  med: 413
   peerings:
   - 194.116.96.58
   - 2001:7f8:23:ffff::27
@@ -46,7 +46,7 @@
   import: AS-NEURONNEXION
   limit_ipv4: 40
   limit_ipv6: 1
-  med: 398
+  med: 391
   peerings:
   - 194.116.96.238
 19679:
@@ -55,7 +55,7 @@
   import: AS-DROPBOX
   limit_ipv4: 100
   limit_ipv6: 50
-  med: 413
+  med: 408
   peerings:
   - 194.116.96.95
   - 2001:7f8:23:ffff::95
@@ -65,7 +65,7 @@
   import: AS-FACEBOOK
   limit_ipv4: 100
   limit_ipv6: 100
-  med: 408
+  med: 407
   peerings:
   - 194.116.96.92
   - 2001:7f8:23:ffff::92
@@ -77,7 +77,7 @@
   import: RADB::AS-BLIZZARD
   limit_ipv4: 200
   limit_ipv6: 50
-  med: 410
+  med: 411
   peerings:
   - 194.116.96.43
   - 2001:7f8:23:ffff::43

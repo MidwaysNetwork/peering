@@ -22,10 +22,13 @@ except:
 factory_request = ses.get("https://peeringdb.com//api/netixlan?asn=" + str(GITOYEN_ASN))
 for factory in factory_request.json()['data']:
     if factory['ipaddr6'] is not None:
-        gitoyen_peering_factory.append(factory)
+	name_request = ses.get("https://peeringdb.com//api/ix?id=" + str(factory['ix_id']))
+	for name in name_request.json()['data']:
+		factory['name'] = name['name']
+	gitoyen_peering_factory.append(factory)
 
 for factory in gitoyen_peering_factory:
-    name = (str(factory['name'])).split(' ')[0].lower()
+    name = (str(factory['name'])).replace(' ','-').lower()
     print("Generation en cours pour " + name)
     peer[name] = dict()
     for asn in PEER_ASN_LIST:
@@ -53,14 +56,8 @@ for factory in gitoyen_peering_factory:
 		    latency = ping.quiet_ping(routeur['ipaddr4'])[1]
                     if latency is None:
                         latency = 0
-		    base = 500
-		    if 'lu-cix' in name:
-			base = 295
-		    if 'top-ix' in name:
-			base = 390
-		    if 'france' in name:
-			base = 200
-		    peer[name][asn]['med'] = int(base + latency)
+		    base = 190
+		    peer[name][asn]['med'] = int(base + latency*10)
                     print(
                         "Generating configuration at " + name + " for the router " + str(routeur['ipaddr4']) + " of the AS " + str(
                             asn) + " " + peer[name][asn]['description']+ " " + str(latency) + " med " + str(peer[name][asn]['med']))

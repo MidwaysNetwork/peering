@@ -11,6 +11,7 @@ protocol bgp {{ ix_name_strip }}_{{ neighbor_as }}{%- if session_num > 1 %}_{{ s
         accept;
     };
     import filter {
+        bgp_community.add((mytag,54000));
         if ! check_import4({{ neighbor_as }},{{ neighbor_ipv4 }},"peering",{{ med }}) then reject;
         accept;
     };

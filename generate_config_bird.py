@@ -78,6 +78,12 @@ def parse_peers(peer_file):
                                  ixp, ix_name_strip=ixp.replace('-', '').replace(':', ''), limit_ipv6=limit_ipv6,
                                  session_num=session6, med=peerings[asn]['med']).encode('utf-8').strip()
                 out6 += '\n'
+                if not os.path.exists("bird6/"+ixp.replace('-', '').replace(':', '')):
+                    os.mkdir("bird6/"+ixp.replace('-', '').replace(':', ''))
+                with open("bird6/"+ ixp.replace('-', '').replace(':', '') + "/"+ "as" + str(asn) + '.conf', 'aw+') as outfile:
+                    outfile.write(out6)
+                    outfile.close()
+                    out6 = ""
             if 'neighbor_ipv4' in locals() and type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv4Address:
                 # Generate IPV4
                 tpl = env.get_template('templates/bird_v4.j2')
@@ -88,12 +94,13 @@ def parse_peers(peer_file):
                                  neighbor_ipv4, ix_name=ixp, ix_name_strip=ixp.replace('-', '').replace(':', ''),
                                  limit_ipv4=limit_ipv4, session_num=session4, med=peerings[asn]['med']).encode('utf-8').strip()
                 out4 += '\n'
-        with open("bird4/" + "as" + str(asn) + '.conf', 'aw+') as outfile:
-            outfile.write(out4)
-            outfile.close()
-        with open("bird6/" + "as" + str(asn) + '.conf', 'aw+') as outfile:
-            outfile.write(out6)
-            outfile.close()
+                if not os.path.exists("bird4/"+ixp.replace('-', '').replace(':', '')):
+                    os.mkdir("bird4/"+ixp.replace('-', '').replace(':', ''))
+                with open("bird4/"+ ixp.replace('-', '').replace(':', '') + "/" + "as" + str(asn) + '.conf', 'aw+') as outfile:
+                    outfile.write(out4)
+                    outfile.close()
+                    out4 = ""
+
 
 
 for peer_files in glob.glob('peers/*.yml'):

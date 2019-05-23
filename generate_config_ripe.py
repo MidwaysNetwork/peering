@@ -27,7 +27,7 @@ def parse_peers(peer_file):
         sys.exit(2)
 
     print "remarks:\nremarks:    ======== %s ========\nremarks:" % ixp.upper()
-
+    del peerings['ID']
     for asn in peerings:
         for keyword in ['export', 'import', 'description']:
             if keyword not in peerings[asn]:

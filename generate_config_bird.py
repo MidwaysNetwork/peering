@@ -25,6 +25,8 @@ def parse_peers(peer_file):
         print colored('ERROR', 'red') + ": the peers.yaml file could not be parsed.. please check \
     your syntax"
         sys.exit(2)
+    ixid = peerings['ID']
+    del peerings['ID']
 
     for asn in peerings:
         for keyword in ['export', 'import', 'description']:
@@ -73,6 +75,7 @@ def parse_peers(peer_file):
 
                 out6 += tpl.render(neighbor_as=asn, description=
                 peerings[asn]['description'], export_as=peerings[asn]['export'],
+				 ix_id=ixid,
                                  import_as=peerings[asn]['import'],
                                  neighbor_ipv6=neighbor_ipv6, ix_name=
                                  ixp, ix_name_strip=ixp.replace('-', '').replace(':', ''), limit_ipv6=limit_ipv6,
@@ -89,7 +92,7 @@ def parse_peers(peer_file):
                 tpl = env.get_template('templates/bird_v4.j2')
 
                 out4 += tpl.render(neighbor_as=asn, description=
-                peerings[asn]['description'], export_as=peerings[asn]['export'],
+                peerings[asn]['description'], export_as=peerings[asn]['export'],ix_id=ixid,
                                  import_as=peerings[asn]['import'], neighbor_ipv4=
                                  neighbor_ipv4, ix_name=ixp, ix_name_strip=ixp.replace('-', '').replace(':', ''),
                                  limit_ipv4=limit_ipv4, session_num=session4, med=peerings[asn]['med']).encode('utf-8').strip()

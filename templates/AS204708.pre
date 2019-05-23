@@ -33,12 +33,18 @@ mp-import:  afi ipv6.unicast from AS6939 accept ANY
 mp-export:  afi ipv6.unicast to AS6939 announce AS-MIDWAYSNETWORK
 remarks:    -
 remarks:    ======== Peering ========
-remarks:    # France-IX
+remarks:    # France-IX Paris
 mp-import:  afi ipv4.unicast from AS51706 accept ANY
 mp-export:  afi ipv4.unicast to AS51706 announce AS-MIDWAYSNETWORK
 mp-import:  afi ipv6.unicast from AS51706 accept ANY
 mp-export:  afi ipv6.unicast to AS51706 announce AS-MIDWAYSNETWORK
 remarks:         
+remarks:    # France-IX Marseille
+mp-import:  afi ipv4.unicast from AS51706 accept ANY
+mp-export:  afi ipv4.unicast to AS51706 announce AS-MIDWAYSNETWORK
+mp-import:  afi ipv6.unicast from AS51706 accept ANY
+mp-export:  afi ipv6.unicast to AS51706 announce AS-MIDWAYSNETWORK
+remarks:
 remarks:    # TopIX
 mp-import:  afi ipv4.unicast from AS25309 accept ANY
 mp-export:  afi ipv4.unicast to AS25309 announce AS-MIDWAYSNETWORK

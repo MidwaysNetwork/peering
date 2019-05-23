@@ -31,6 +31,7 @@ for factory in gitoyen_peering_factory:
     name = (str(factory['name'])).replace(' ','-').lower()
     print("Generation en cours pour " + name)
     peer[name] = dict()
+    peer[name]['ID'] = factory['ix_id']
     for asn in PEER_ASN_LIST:
         info_request = ses.get(
             "https://peeringdb.com/api/netixlan?asn=" + str(asn) + "&ix_id=" + str(factory['ix_id']))

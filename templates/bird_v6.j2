@@ -12,6 +12,7 @@ protocol bgp {{ ix_name_strip  }}_{{ neighbor_as }}{%- if session_num > 1 %}_{{ 
     };
     import filter {
         bgp_community.add((mytag,54000));
+	bgp_community.add((mytag,{{ ix_id }}));
         if ! check_import6({{ neighbor_as }},{{ neighbor_ipv6 }},"peering",{{ med }}) then reject;
         accept;
     };

@@ -1,10 +1,9 @@
 protocol bgp {{ ix_name_strip  }}_{{ neighbor_as }}{%- if session_num > 1 %}_{{ session_num }}{%- endif %}  from UPSTREAM {
     neighbor {{ neighbor_ipv6 }} as {{ neighbor_as }};
     description "{{ ix_name }} / {{ description }}";
+    passive on;
     {%- if limit_ipv6 %}
-        {% if limit_ipv6 > 50 %}
     import limit {{ limit_ipv6 }};
-        {%- endif %}
     {%- endif %}
     export filter {
         if ! check_export6() then reject;

@@ -5,6 +5,7 @@ import ipaddr
 import yaml
 import sys
 import os
+import subprocess
 import glob
 from jinja2 import Environment, FileSystemLoader
 from termcolor import colored
@@ -90,7 +91,7 @@ def parse_peers(peer_file):
             if 'neighbor_ipv4' in locals() and type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv4Address:
                 # Generate IPV4
                 tpl = env.get_template('templates/bird_v4.j2')
-
+		#out = subprocess.Popen(['bgpq3', '-4', '-3', '-A', '-b', ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
                 out4 += tpl.render(neighbor_as=asn, description=
                 peerings[asn]['description'], export_as=peerings[asn]['export'],ix_id=ixid,
                                  import_as=peerings[asn]['import'], neighbor_ipv4=
